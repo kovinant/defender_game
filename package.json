@@ -2,9 +2,10 @@
   "name": "defender_game",
   "version": "1.0.0",
   "description": "Browser based game",
-  "main": "index.js",
+  "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/kovinant/defender_game/issues"
   },
-  "homepage": "https://github.com/kovinant/defender_game#readme"
+  "homepage": "https://github.com/kovinant/defender_game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7"
+  },
+  "dependencies": {
+    "core-js": "^3.37.1"
+  }
 }
