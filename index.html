@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defender Game</title>
+</head>
+<body>
+    <h1>Welcome to Defender Game</h1>
+
+   
+    <script src="dist/scripts.js"></script>
+
+    
+    <script>
+        const characters = [
+            { name: 'мечник', health: 10 },
+            { name: 'маг', health: 100 },
+            { name: 'маг', health: 0 },
+            { name: 'лучник', health: 0 },
+        ];
+
+        const alive = characters.filter(item => item.health > 0);
+        console.log(alive); 
+    </script>
+</body>
+</html>
